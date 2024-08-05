@@ -180,6 +180,8 @@ h4 {
   font-weight: bold;
 }
 
+
+
 .hLarge .hSmall {
   font-style: normal;
 }
@@ -206,18 +208,29 @@ h4 {
   font-weight: 900;
 }
 
-
 .botton a {
   background-color: var(--gray);
   color: var(--white);
   text-decoration: none;
   padding: 1.2rem;
-  width: 184.12px;
+  width: 200.12px;
   height: 47px;
   border-radius: 50px;
 }
 
 .botton a:hover {
+  text-decoration: none;
+  background-color: var(--orange);
+  color: var(--white);
+  margin-right: 1.2rem;
+}
+
+.camera .botton a {
+  background-color: var(--white);
+  color: var(--blackgray);
+}
+
+.camera .botton a:hover {
   text-decoration: none;
   background-color: var(--orange);
   color: var(--white);
@@ -236,6 +249,7 @@ h4 {
 
 .links {
   color: #404040;
+  text-decoration: underline;
 }
 
 
@@ -265,15 +279,15 @@ footer svg a:hover {
   fill: var(--GREEN);
 }
 
-
 footer h4 {
   font-size: 1.3rem;
 }
 
-footer li a {
+/* footer li a {
+  list-style: none;
   color: var(--white);
   font-size: 24px;
-}
+} */
 
 footer li a {
   list-style: none;
@@ -293,8 +307,15 @@ footer .wcolor a:hover {
   color: var(--GREEN);
 }
 
-@media screen and (min-width: 320px) {
 
+
+
+
+
+@media screen and (min-width: 320px) {
+main{
+  padding: .1rem;
+}
   .localt {
     background-color: #f2f2f2;
     margin: 2rem 0rem;
@@ -358,13 +379,32 @@ footer .wcolor a:hover {
   background-color: #404040;
   margin: 3rem .6rem;
 }
-.camera .hLarge{
 
+.camera .hLarge{
+  font-weight: 900;
+  height: 95px;
 }
 
 .camera .hSmall{
-
+  font-weight: 900;
+  height: 95px;
+ margin-bottom: 2.3rem;
 }
+
+.camera p{
+  margin: 2.3rem .4rem;
+}
+/* 
+.goodfood .hLarge {
+  color: var(--blackgray);
+  font-weight: 900;
+  height: 95px;
+}
+
+.goodfood .hSmall {
+  color: var(--lgray);
+  font-weight: 800;
+} */
 
 
 
@@ -384,19 +424,7 @@ footer .wcolor a:hover {
   /* .stuff .flex-container{
     flex-direction: row;
   } */
-
-
-
-
-
-}
-
-@media screen and (min-width: 1350px) {}
-
-
-
-@media screen and (min-width: 57rem) {
-  .wide-flex {
+.wide-flex {
     display: flex;
     align-items: flex-start;
   }
@@ -473,4 +501,12 @@ footer .wcolor a:hover {
     text-align: left;
     top: -1.5rem;
   }
+
+
+
+
 }
+
+@media screen and (min-width: 1350px) {}
+
+
