@@ -1,0 +1,476 @@
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 800
+
+.merriweather-sans-<uniquifier> {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* COLOURS 
+GRAY TOP #3a3a3a
+GRAY BOTTON #404040
+LIGHT GRAY #707070
+LIGHT LIGHT GRAY(FOR BG)#f2f2f2
+GREEN(LOCAL) #727812
+ 
+YELLOW FONT #b29124
+
+*/
+@font-face {
+  font-family: 'Milky Honey';
+  src: url('CooperHewitt-Heavy.woff2') format('woff2'),
+    url('CooperHewitt-Heavy.woff') format('woff');
+  font-weight: normal;
+}
+
+:root {
+  /* --nuntio: 2em/1.5 'Nunito', 'Helvetica Neue', sans-serif; */
+  /* --open-sans: 1rem/1.2 'Open Sans', sans-serif; */
+  --cheavy: 'CooperHewitt-Heavy', sans-serif;
+  --blackgray: #3a3a3a;
+  --gray: #404040;
+  --lgray: #707070;
+  --white: #f2f2f2;
+  --GREEN: #727812;
+  --yellow: #b29124;
+  --orange: #c65614;
+}
+
+
+/* Utility Classes */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inner-container {
+  margin: auto;
+  max-width: 40rem;
+  padding: 3rem 1rem;
+}
+
+header .inner-container {
+  padding: unset;
+}
+
+.sr-only {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--cheavy);
+}
+
+body {
+  background-color: #fff;
+  color: var(--blackgray);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 a,
+h2 {
+  font-family: var(--CooperHewitt-Heavy);
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-family: var(--honey-font);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: linear-gradient(270deg, rgba(231, 90, 47, 1) 0%, rgba(188, 65, 35, 1) 100%);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin: 1rem 0;
+}
+
+.btn:hover {
+  background: var(--orange);
+}
+
+/*  Header & Navigation  */
+header {
+  background: #3a3a3a;
+  color: white;
+}
+
+header .logo {
+  width: 4rem;
+  padding: 0.5rem;
+}
+
+header .main-menu,
+header .dropdown {
+  list-style: none;
+  text-align: right;
+}
+
+header .main-menu li a {
+  font-size: 24px;
+}
+
+header .dropdown li a {
+  list-style: none;
+  font-size: 18px;
+}
+
+header svg {
+  width: 1.5rem;
+}
+
+header .toggle:hover svg path {
+  fill: var(--white);
+}
+
+header ul a {
+  color: white;
+  text-decoration: none;
+  padding: .3rem;
+  border-left: 0.25rem solid rgba(0, 0, 0, 0);
+  display: block;
+}
+
+header li a span {
+  display: none;
+}
+
+header ul a:hover {
+  color: var(--GREEN);
+}
+
+/* --MAIN-- */
+
+main h2,
+h3,
+h4 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.hLarge .hSmall {
+  font-style: normal;
+}
+
+.goodfood .hLarge {
+  color: var(--blackgray);
+  font-weight: 900;
+  height: 95px;
+}
+
+.goodfood .hSmall {
+  color: var(--lgray);
+  font-weight: 800;
+}
+
+.localt .hLarge {
+  color: var(--GREEN);
+  font-weight: 900;
+  height: 95px;
+}
+
+.localt .hSmall {
+  color: var(--lgray);
+  font-weight: 900;
+}
+
+
+.botton a {
+  background-color: var(--gray);
+  color: var(--white);
+  text-decoration: none;
+  padding: 1.2rem;
+  width: 184.12px;
+  height: 47px;
+  border-radius: 50px;
+}
+
+.botton a:hover {
+  text-decoration: none;
+  background-color: var(--orange);
+  color: var(--white);
+  margin-right: 1.2rem;
+}
+
+.stuff svg {
+  fill: var(--orange);
+  width: 2.6rem;
+}
+
+.stuff h3 {
+  font-size: 2.625rem;
+  color: #b29124;
+}
+
+.links {
+  color: #404040;
+}
+
+
+
+
+
+/* .camera {
+  background: url('../img/svg/camera-690163_1920.png')
+    /* center / cover no-repeat fixed /;
+} */
+
+
+
+/* --FOOTER-- */
+footer {
+  background-color: var(--blackgray);
+  color: var(--white);
+  list-style: none;
+  font-size: 1rem;
+}
+
+footer svg {
+  fill: var(--white);
+}
+
+footer svg a:hover {
+  fill: var(--GREEN);
+}
+
+
+footer h4 {
+  font-size: 1.3rem;
+}
+
+footer li a {
+  color: var(--white);
+  font-size: 24px;
+}
+
+footer li a {
+  list-style: none;
+  font-size: 18px;
+}
+
+footer li svg a:hover {
+  color: var(--GREEN);
+}
+
+footer section .row {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .wcolor a:hover {
+  color: var(--GREEN);
+}
+
+@media screen and (min-width: 320px) {
+
+  .localt {
+    background-color: #f2f2f2;
+    margin: 2rem 0rem;
+  }
+
+  .goodfood .hLarge {
+    padding-left: 1.6rem;
+
+  }
+
+  .goodfood .hSmall {
+    padding-left: 4rem;
+  }
+
+  .localt .hLarge {
+    padding-left: 1.4rem;
+
+  }
+
+  .localt .hSmall {
+    padding-left: 1.7rem;
+  }
+
+  .localt .botton {
+    width: 7rem;
+  }
+
+  .polaroid {
+    background-color: var(--white);
+    padding: 1.3rem;
+    width: 267px;
+    height: 460px;
+  }
+
+  .four .polaroid img {
+    width: 267px;
+    height: 402px;
+  }
+
+  .stuff .flex-container {
+    flex-direction: column;
+  }
+
+  .four {
+    margin: 2rem;
+  }
+
+  .four h3 {
+    margin: 1.2rem;
+  }
+
+  .four p {
+    margin: 1.2rem;
+  }
+
+  .four a:hover {
+    color: var(--orange);
+  }
+.camera{
+  color: var(--white);
+  background-color: #404040;
+  margin: 3rem .6rem;
+}
+.camera .hLarge{
+
+}
+
+.camera .hSmall{
+
+}
+
+
+
+
+
+
+  footer {
+    display: flex;
+  }
+
+  footer svg {
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  /* .stuff .flex-container{
+    flex-direction: row;
+  } */
+
+
+
+
+
+}
+
+@media screen and (min-width: 1350px) {}
+
+
+
+@media screen and (min-width: 57rem) {
+  .wide-flex {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  header div.inner-container {
+    max-width: 60rem;
+  }
+
+  header div.inner-container>.flex-container {
+    flex: 1 0 auto;
+  }
+
+  /* hidding the toggle */
+  .toggle-btn {
+    display: none;
+  }
+
+  .first-link img,
+  a span {
+    display: unset;
+  }
+
+  nav {
+    justify-content: flex-end;
+    position: static;
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+  .members {
+    border-top: none;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .members li {
+    margin: 0 0.75rem;
+  }
+
+  .members li:last-of-type {
+    margin-right: 3rem;
+  }
+
+  .main-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .main-menu li {
+    position: relative;
+  }
+
+  .main-menu>li {
+    margin: 1rem;
+  }
+
+  .main-menu li:hover>.second-tier,
+  .second-tier li:hover>.third-tier {
+    visibility: visible;
+  }
+
+  .second-tier {
+    left: 0;
+    text-align: right;
+  }
+
+  .third-tier {
+    left: 100%;
+    text-align: left;
+    top: -1.5rem;
+  }
+}
