@@ -358,6 +358,7 @@ footer .wcolor a:hover {
   .four .polaroid img {
     width: 267px;
     height: 402px;
+    object-fit: cover;
   }
 
   .stuff .flex-container {
@@ -494,6 +495,19 @@ footer .wcolor a:hover {
     max-width: 720px;
     align-items: normal;
   }
+
+  .goodfood{
+    display: flex;
+  }
+
+  .localt{
+    display: flex;
+  }
+
+  .camera{
+    display: flex;
+  }
+
 
 
   /* .four{
