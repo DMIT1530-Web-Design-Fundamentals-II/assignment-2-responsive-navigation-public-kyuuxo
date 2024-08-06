@@ -288,6 +288,10 @@ footer h4 {
   color: var(--white);
   font-size: 24px;
 } */
+footer li {
+  list-style: none;
+}
+
 
 footer li a {
   list-style: none;
@@ -313,9 +317,10 @@ footer .wcolor a:hover {
 
 
 @media screen and (min-width: 320px) {
-main{
-  padding: .1rem;
-}
+  main {
+    padding: .1rem;
+  }
+
   .localt {
     background-color: #f2f2f2;
     margin: 2rem 0rem;
@@ -374,27 +379,29 @@ main{
   .four a:hover {
     color: var(--orange);
   }
-.camera{
-  color: var(--white);
-  background-color: #404040;
-  margin: 3rem .6rem;
-}
 
-.camera .hLarge{
-  font-weight: 900;
-  height: 95px;
-}
+  .camera {
+    color: var(--white);
+    background-color: #404040;
+    margin: 3rem .6rem;
+  }
 
-.camera .hSmall{
-  font-weight: 900;
-  height: 95px;
- margin-bottom: 2.3rem;
-}
+  .camera .hLarge {
+    font-weight: 900;
+    height: 95px;
+  }
 
-.camera p{
-  margin: 2.3rem .4rem;
-}
-/* 
+  .camera .hSmall {
+    font-weight: 900;
+    height: 95px;
+    margin-bottom: 2.3rem;
+  }
+
+  .camera p {
+    margin: 2.3rem .4rem;
+  }
+
+  /* 
 .goodfood .hLarge {
   color: var(--blackgray);
   font-weight: 900;
@@ -406,11 +413,6 @@ main{
   font-weight: 800;
 } */
 
-
-
-
-
-
   footer {
     display: flex;
   }
@@ -421,10 +423,11 @@ main{
 }
 
 @media screen and (min-width: 720px) {
+
   /* .stuff .flex-container{
     flex-direction: row;
   } */
-.wide-flex {
+  .wide-flex {
     display: flex;
     align-items: flex-start;
   }
@@ -486,27 +489,30 @@ main{
     margin: 1rem;
   }
 
-  .main-menu li:hover>.second-tier,
-  .second-tier li:hover>.third-tier {
-    visibility: visible;
+  .stuff .flex-container {
+    flex-direction: row;
+    max-width: 720px;
+    align-items: normal;
   }
 
-  .second-tier {
-    left: 0;
-    text-align: right;
-  }
 
-  .third-tier {
-    left: 100%;
-    text-align: left;
-    top: -1.5rem;
-  }
+  /* .four{
+    width: 387px;
+    height: 607px;
+  } */
+
+
+
+
 
 
 
 
 }
 
+
+
+
+
+
 @media screen and (min-width: 1350px) {}
-
-
